@@ -1,5 +1,5 @@
 // Importing a Google Fonts font
-@import url('');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 // Importing base styles, components and utilities from Tailwind CSS
 @tailwind base;
@@ -8,31 +8,52 @@
 
 // Setting box-sizing, margin, and padding for all elements in the document
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 // Color and font variables defined in the :root selector
-:root {}
+:root {
+  --main-font: "Outfit", sans-serif;
+}
 
 body {
-    background-color: red;
+  background-color: red;
 }
 
-#root {
-    height: 100svh;
-    background-color: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-block: 40px;
-}
+// #root {
+//     height: 100svh;
+//     background-color: green;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding-block: 40px;
+// }
 
 main {
-    height: fit-content;
-    min-height: 100%;
-    width: 100%;
-    max-width: 640px;
-    background-color: blue;
+  height: fit-content;
+  min-height: 100%;
+  width: 100%;
+  max-width: 640px;
+  padding: 20px;
+  background-color: blue;
+}
+
+i {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.main-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("/src/assets/Logo.svg");
+}
+
+.edit-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("/src/assets/Edit_duotone.svg");
 }
